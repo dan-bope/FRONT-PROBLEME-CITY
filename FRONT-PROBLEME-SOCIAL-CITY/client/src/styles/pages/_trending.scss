@@ -1,0 +1,104 @@
+.trending-page {
+  max-width: 1000px;
+  margin: 62px auto 0px;
+  display: grid;
+  grid-template-columns: 60px 1fr 374px;
+
+  @media screen and(max-width: 990px) {
+    grid-template-columns: 60px 1fr;
+    margin: 58px 20px 50px
+  }
+
+  @media screen and(max-width: 590px) {
+    grid-template-columns: 1fr;
+    margin: 58px 8px 50px;
+  }
+
+  .table-admin{
+    margin-top: 35px;
+    margin-left: -400px;
+    width: 300px;
+    box-shadow: -1px 12px 12px -6px rgba(0,0,0,0.5);
+  }
+
+  .table-admin,tr,th{
+    padding: 5px;
+
+    //border: 1px solid lightgray;
+
+    border-collapse: collapse;
+
+    text-align: center;
+
+    cursor: pointer;
+  }
+
+  tr{
+    //font-size: 15px;
+  }
+
+  th{
+
+    background-color: $color-1;
+
+    color: white;
+
+  }
+
+  tr:nth-child(odd){
+
+    background-color: $color-1;
+    //color: $white;
+
+  }
+
+  tr:nth-child(odd):hover{
+
+    //background-color: dodgerblue;
+
+    color: white;
+
+    transform: scale(1.5);
+
+    transition: transform 300ms ease-in;
+
+  }
+
+  tr:nth-child(even){
+
+    background-color: #ededed;
+
+  }
+
+  tr:nth-child(even):hover{
+
+    background-color: $color-1;
+
+    transform: scale(1.5);
+
+    transition: transform 300ms ease-in;
+    color: $white;
+
+
+  }
+
+  .main {
+    margin-top: -8px;
+  }
+
+  .right-side {
+    position: relative;
+    width: 100%;
+    margin: 0px 0 0 14px;
+  
+    .right-side-container {
+      position: fixed;
+      width: 35%;
+  
+      @media screen and(min-width: 1200px) {
+        width: 404px;
+      }
+  
+    }
+  }
+} 
